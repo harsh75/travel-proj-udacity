@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planner</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">Travel Planner</a>
+    </nav>
+
+    <div class="intro-message">
+      Travel Planner allows you to plan your trips ahead of time.
+    </div>
+
+    <form id="trip-form">
+      <fieldset>
+        <label for="travel-destination">Where do you want to travel to?</label>
+        <input
+          type="text"
+          id="travel-destination"
+          placeholder="London"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <label for="travel-start-date">When do you want to travel?</label>
+        <input type="date" id="travel-start-date" required />
+      </fieldset>
+
+      <fieldset>
+        <label for="travel-end-date">When are you planning to return?</label>
+        <input type="date" id="travel-end-date" required />
+      </fieldset>
+
+      <button id="save-trip-btn" type="button">Save trip</button>
+      <span id="error-text" class="error"></span>
+    </form>
+
+    <div id="my-trips-message">
+      My Trips
+    </div>
+
+    <div id="my-trips" class="my-trips"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () =>
+          navigator.serviceWorker.register("/service-worker.js")
+        );
+      }
+    </script>
+  </body>
+</html>

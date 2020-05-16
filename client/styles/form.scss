@@ -1,0 +1,49 @@
+#trip-form {
+  margin: 15px;
+  background-color:black;
+  width: max-content;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+
+input {
+
+  width: max-content;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px  blue;
+  margin-top: 25px;
+}
+
+button {
+  width: max-content;
+  margin-left: 12px;
+  padding: 10px;
+  border: 1px solid blue;
+
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid rgb(187, 159, 238);
+  background-color: rgb(241, 241, 241);
+}
+
+span {
+  width: max-content;
+  margin-top: 10px;
+  margin-left: 12px;
+  color: pink;
+}
