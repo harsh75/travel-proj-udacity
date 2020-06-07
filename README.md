@@ -1,7 +1,5 @@
 # Udacity FEND Travel App
 
-This frontend application uses geonames api for location, dark sky api for weather data and pixabay api for images. You can create and save a trip.
-
 ## How To Run
 
 To install app packages, run:
